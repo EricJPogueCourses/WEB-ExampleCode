@@ -1,4 +1,3 @@
-l
 var contactURLArray = [];
 var contactArray = [];
 var loadingContact = 0;
