@@ -120,7 +120,7 @@ function loadContacts() {
 
     // Note that W3C documentation and my experimentation indicate that each XMLHttpRequest callback function must be a 
     // unique instance of a function. A better implmentation would have had an array of callback functions instead of a 
-    // recursive call to load
+    // recursive call to loadNextContact().
     if (contactURLArray.length > loadingContact) {
         loadNextContact(contactURLArray[loadingContact]);
     }

@@ -14,6 +14,7 @@ function loadIndex() {
         console.log("Index JSON:" + indexRequest.responseText);
         document.getElementById("indexID").innerHTML = indexRequest.responseText;
         contactIndex = JSON.parse(indexRequest.responseText);
+        contactURLArray.length = 0;
         for (i=0; i<contactIndex.length; i++) {
             contactURLArray.push(contactIndex[i].ContactURL);
         }
