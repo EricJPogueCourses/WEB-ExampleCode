@@ -1,3 +1,7 @@
+// Eric Pogue
+//
+// All rights reserved.
+
 var contactURLArray = [];
 var contactArray = [];
 var loadingContact = 0;
@@ -29,8 +33,8 @@ function loadContacts() {
     loadingContact = 0;
 
     // Note that W3C documentation and my experimentation indicate that each XMLHttpRequest callback function must be a 
-    // unique instance of a function. A better implmentation would have had an array of callback functions and a multithreaded
-    // inplementation instead of a recursive synchronous call to load.
+    // unique instance of a function. A better implementation would have had an array of callback functions and a multithreaded
+    // implementation instead of a recursive synchronous call to load.
     if (contactURLArray.length > loadingContact) {
         loadNextContact(contactURLArray[loadingContact]);
     }
